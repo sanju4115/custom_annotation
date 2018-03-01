@@ -37,9 +37,9 @@ public class DataAccessAnnotationProcessor implements BeanPostProcessor {
 
             //Here we can write our logic for fetching the actual data
             if (value.equalsIgnoreCase("value")) {
-                field.set(bean, "Sanjay");
+                field.set(bean, "value1");
             } else if (value.equalsIgnoreCase("xyz")){
-                field.set(bean, "Rahul");
+                field.set(bean, "value2");
             } else{
                 field.set(bean, "default");
             }

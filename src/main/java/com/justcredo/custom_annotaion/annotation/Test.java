@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class Test {
 
-    @CustomValue
     private String str ;
 
     @DataAccess(entity="value")
@@ -18,9 +17,6 @@ public class Test {
     @DataAccess(entity="xyz")
     private String value3;
 
-
-
-    @CustomValue
     public void test(){
         System.out.println("test method executed");
     }
