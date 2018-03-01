@@ -34,6 +34,8 @@ public class DataAccessAnnotationProcessor implements BeanPostProcessor {
             }
             ReflectionUtils.makeAccessible(field);
             String value = field.getDeclaredAnnotation(DataAccess.class).entity();
+
+            //Here we can write our logic for fetching the actual data
             if (value.equalsIgnoreCase("value")) {
                 field.set(bean, "Sanjay");
             } else if (value.equalsIgnoreCase("xyz")){
